@@ -1,0 +1,30 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--color-bgDark);
+
+  color: var(--color-text);
+  font-family: var(--font);
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+.layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'nav content';
+
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 200px 1fr;
+}
+
+.content {
+  grid-area: content;
+}

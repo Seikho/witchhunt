@@ -1,0 +1,25 @@
+.header {
+  grid-area: header;
+  width: calc(100% - 32px);
+  height: 60px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  padding: 0 16px;
+  background-color: var(--color-bgLight);
+
+  &__left {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__mid {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
