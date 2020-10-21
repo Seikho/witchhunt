@@ -14,13 +14,13 @@ const history = h.createBrowserHistory()
 
 const App = () => (
   <Provider store={store}>
-    <Layout>
-      <Router history={history}>
+    <Router history={history}>
+      <Layout>
         <Switch>
           <Route path={['/', '/home']} exact={true} component={Home} />
         </Switch>
-      </Router>
-    </Layout>
+      </Layout>
+    </Router>
   </Provider>
 )
 

@@ -10,7 +10,7 @@
       "/*": ["web/*"]
     },
     "outDir": "dist",
-    "inlineSourceMap": true,
+    "sourceMap": true,
     "allowSyntheticDefaultImports": true,
     "jsx": "react"
   }
