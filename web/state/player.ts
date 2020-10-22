@@ -11,11 +11,15 @@ type PlayerState = {
 }
 
 type PlayerAction =
-  | { type: 'PlayerLogin' }
+  | { type: 'PlayerLogin'; id: string }
   | { type: 'PlayerUpdateName'; name: string }
   | { type: 'PlayerNameUpdated'; name: string }
 
 const { reducer, handle } = createReducer<PlayerState, PlayerAction>({
-  id: rand.guid(),
+  id: '',
   name: rand.name(),
+})
+
+handle('PlayerLogin', (_, action) => {
+  return { id: action.id }
 })

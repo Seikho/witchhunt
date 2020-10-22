@@ -33,10 +33,7 @@ window.addEventListener('keyup', (ev) => onKey(ev.key, false))
 
 function onKey(key: string, next: boolean) {
   const dir = keys[key]
-  if (!dir) {
-    console.log(key)
-    return
-  }
+  if (!dir) return
 
   state[dir] = next
 }

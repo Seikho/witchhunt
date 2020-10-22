@@ -2,7 +2,17 @@ import { create } from 'svcready'
 import * as session from 'express-session'
 import { env } from './env'
 
-export const { app, server, sockets, start, stop, validateToken } = create({
+export const {
+  app,
+  server,
+  sockets,
+  start,
+  stop,
+  validateToken,
+  onConnect,
+  onMsg,
+  sendMsg,
+} = create({
   port: 3000,
   sockets: true,
 })

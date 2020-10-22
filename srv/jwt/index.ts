@@ -39,7 +39,7 @@ export function verify<T = any>(token: string, key: string) {
   }
 }
 
-export function create(algorithm: string, payload: object, key?: string) {
+export function create(algorithm: string, payload: object, key: string) {
   const alg = algs[algorithm.toLowerCase()]
   if (!alg) throw new Error(`Unrecognised algorithm "${algorithm}"`)
 

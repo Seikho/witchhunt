@@ -9,7 +9,7 @@
     "paths": {
       "/*": ["web/*"]
     },
-    "outDir": "dist",
+    "outDir": "build",
     "sourceMap": true,
     "allowSyntheticDefaultImports": true,
     "jsx": "react"

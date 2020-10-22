@@ -1,6 +1,7 @@
 import 'babel-polyfill'
 import './styles/vars.scss'
 import './styles/elements.scss'
+import './msg'
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import * as h from 'history'

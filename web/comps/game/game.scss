@@ -1,3 +1,5 @@
+$cellSize: 25px;
+
 .game {
   width: 100%;
   height: 100%;
@@ -21,10 +23,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 8px;
-      height: 20px;
-      width: 20px;
-      margin: 2px;
+      font-size: 10px;
+      height: $cellSize;
+      width: $cellSize;
       background-color: var(--color-bgLight);
       border: 1px solid var(--color-border);
 
