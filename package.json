@@ -4,7 +4,7 @@
   "description": "",
   "main": "build/srv/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha \"build/**/*.spec.js\" --exit",
     "serve": "parcel serve web/index.html"
   },
   "repository": {
