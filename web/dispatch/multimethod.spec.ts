@@ -1,10 +1,6 @@
 import { expect } from 'chai'
 import { create } from './index'
 
-type Nums = '1' | '2' | '3' | '4' | '5'
-
-type Params = [Nums, number, Nums]
-
 const { override, dispatch } = createTester()
 
 function handler(left: string, mid: number, right: string) {
@@ -36,8 +32,13 @@ describe('multimethods', () => {
   })
 })
 
+type Nums = '1' | '2' | '3' | '4' | '5'
+
+type Params = [Nums, number, Nums]
+
 function createTester() {
   return create<Params, any>(
+    {},
     (l, r) => l === r,
     () => true,
     (l, r) => l === r
